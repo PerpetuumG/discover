@@ -72,7 +72,8 @@ header .container {
     border: 2px solid var(--whitegrey);
     position: relative;
 }
-.logo::after{
+
+.logo::after {
     content: "travel";
     text-transform: uppercase;
     font-size: 18px;
@@ -85,35 +86,39 @@ header .container {
     left: 40px;
 }
 
-.mini-menu{
+.mini-menu {
     display: none;
 }
 
-.home{
+.home {
     min-height: 915px;
     background: url("../img/bg.jpg") center/cover fixed;
 }
-.home-container{
+
+.home-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: inherit;
     text-align: center;
 }
-.home-title{
+
+.home-title {
     margin: 0;
     color: var(--white);
     text-transform: uppercase;
     font-size: 68px;
 }
-.home-text{
+
+.home-text {
     color: var(--white);
     max-width: 1000px;
     margin: 50px auto 90px;
     font-size: 22px;
     line-height: 38px;
 }
-.home-link{
+
+.home-link {
     text-decoration: none;
     text-transform: uppercase;
     background: var(--green);
@@ -121,4 +126,76 @@ header .container {
     font-size: 26px;
     padding: 25px 40px;
     border-radius: 5px;
+}
+
+.favorable {
+    padding: 100px 0 70px;
+}
+
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--green);
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 1px;
+    background: #c2c2c2;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-75px);
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--green);
+    position: absolute;
+    top: 39px;
+    left: 50%;
+    transform: translateX(-25px);
+}
+
+.fav-container {
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.fav-item {
+    width: 48%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.fav-img {
+    width: 40%;
+    margin-right: 30px;
+}
+
+.fav-text {
+    width: 280px;
+}
+
+.fav-text h6 {
+    margin: 14px 0 25px;
+    font-size: 15px;
+    color: var(--darkgrey);
+    line-height: 20px;
+}
+
+.fav-text p {
+    font-size: 14px;
+    color: var(--lightgrey);
+    line-height: 22px;
 }
