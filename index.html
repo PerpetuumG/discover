@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
     <!--    <link rel="manifest" href="favicons/site.webmanifest">-->
-    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#59c45a">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -29,8 +30,8 @@
 <div class="wrapper">
     <header>
         <div class="container">
-            <a href="#" class="logo">Discover</a>
-            <nav>
+            <a href="#" class="logo" data-aos="slide-right">Discover</a>
+            <nav data-aos="slide-left">
                 <button class="mini-menu">Menu</button>
                 <ul>
                     <li><a href="#">home</a></li>
@@ -45,19 +46,20 @@
 
     <section class="home">
         <div class="container home-container">
-            <h1 class="home-title">discover</h1>
-            <p class="home-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            <h1 class="home-title" data-aos="fade-up" data-aos-delay="50">discover</h1>
+            <p class="home-text" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
                 incididunt
                 ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a class="home-link" href="#">booking tour</a>
+            <a class="home-link" href="#" data-aos="fade-up" data-aos-delay="150">booking tour</a>
         </div>
     </section>
 
     <section class="favorable">
         <h2 class="section-title">favorable</h2>
         <div class="container fav-container">
-            <article class="fav-item">
+            <article class="fav-item" data-aos="flip-left">
                 <img class="fav-img" src="https://picsum.photos/id/10/600/600" alt="">
                 <div class="fav-text">
                     <h6>Sed ut perspiciatis unde omnis iste natus
@@ -67,7 +69,7 @@
                         Sed ut perspiciatis unde omnis iste natus error sit.</p>
                 </div>
             </article>
-            <article class="fav-item">
+            <article class="fav-item" data-aos="flip-left">
                 <img class="fav-img" src="https://picsum.photos/id/1006/600/600" alt="">
                 <div class="fav-text">
                     <h6>Sed ut perspiciatis unde omnis iste natus
@@ -77,7 +79,7 @@
                         Sed ut perspiciatis unde omnis iste natus error sit.</p>
                 </div>
             </article>
-            <article class="fav-item">
+            <article class="fav-item" data-aos="flip-left">
                 <img class="fav-img" src="https://picsum.photos/id/1015/600/600" alt="">
                 <div class="fav-text">
                     <h6>Sed ut perspiciatis unde omnis iste natus
@@ -87,7 +89,7 @@
                         Sed ut perspiciatis unde omnis iste natus error sit.</p>
                 </div>
             </article>
-            <article class="fav-item">
+            <article class="fav-item" data-aos="flip-left">
                 <img class="fav-img" src="https://picsum.photos/id/1018/600/600" alt="">
                 <div class="fav-text">
                     <h6>Sed ut perspiciatis unde omnis iste natus
@@ -202,12 +204,12 @@
                     est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non Sed ut
                     perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
                 <div class="contact-item">
-                    <i class="fas fa-map-market-alt"></i>
+                    <i class="fas fa-map-marker-alt"></i>
                     <span>So 188 Nguyen Xien, Thanh Xuan, Ha Noi</span>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-phone-square-alt"></i>
-                    <a href="tel:+84 985 234 812">+84 985 234 812</a>
+                    <a href="tel:+84985234812">+84 985 234 812</a>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
@@ -233,7 +235,7 @@
                 </div>
             </div>
             <div class="contact-form">
-                <form action="">
+                <form action="mail.php">
                     <input type="text" placeholder="Your name">
                     <input type="email" placeholder="Email">
                     <textarea placeholder="Message"></textarea>
@@ -249,7 +251,9 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery.min.js"></script>-->
 <script src="js/slick.min.js"></script>
+<script src="js/aos.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
